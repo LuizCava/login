@@ -1,0 +1,49 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+.form{
+    background-color: #fff;
+    padding: 80px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.titleForm{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+#signInForm{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#username{
+    width: 80%;
+    height: 36px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    padding-left: 20px;
+}
+#password{
+    width: 80%;
+    height: 36px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    padding-left: 20px;
+}
+#login{
+    width: 80%;
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    background-color: #000000;
+    padding-left: 20px;
+    color: #fff;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<script>
+    
+    const data = localStorage.getItem('user');  
+    const user = JSON.parse(data);
+    if(user == null){
+        localStorage.setItem('user', JSON.stringify([]));
+    }
+
+    if(user[0]){
+        window.location.href = 'page/signIn.html';
+    }else{
+        window.location.href = 'page/signUp.html';
+    }
+    
+</script>
+
+</html>
