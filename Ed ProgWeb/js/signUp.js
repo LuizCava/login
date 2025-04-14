@@ -1,4 +1,4 @@
-document.getElementById('signUpForm').addEventListener('submit', function(event) {
+document.getElementById('signForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const username = document.getElementById('username').value;
     const password = Number(document.getElementById('password').value);
