@@ -10,6 +10,7 @@
     <title>MyStore</title>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/home.css">
+    <script src="../js/home.js"></script>
 </head>
 <body>
     <main>
@@ -18,9 +19,13 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#product">Produtos</a></li>
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contatos</a></li>
+                    <li>
+                        <button type="button" onclick="signOut()" class="sign-out-button">
+                            <p>Logout</p>
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -33,13 +38,70 @@
                 <p>Um espaço feito com carinho, onde você encontra qualidade, estilo e aquele atendimento que faz toda a diferença.</p>
             </div>
         </div>
-        <section>
-
+        <section id="product">
+            <h2>Produtos em Destaque</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="../assets/tenis.png" alt="Tênis Estiloso" width="200" height="200">
+                    <h3>Tênis Estiloso</h3>
+                    <div class="product-details">
+                        <p>R$ 999,99</p>
+                        <button type="button" class="add-to-cart-button">Buy</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../assets/tenis.png" alt="Tênis Estiloso" width="200" height="200">
+                    <h3>Tênis Estiloso</h3>
+                    <div class="product-details">
+                        <p>R$ 999,99</p>
+                        <button type="button" class="add-to-cart-button">Buy</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../assets/tenis.png" alt="Tênis Estiloso" width="200" height="200">
+                    <h3>Tênis Estiloso</h3>
+                    <div class="product-details">
+                        <p>R$ 999,99</p>
+                        <button type="button" class="add-to-cart-button">Buy</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../assets/tenis.png" alt="Tênis Estiloso" width="200" height="200">
+                    <h3>Tênis Estiloso</h3>
+                    <div class="product-details">
+                        <p>R$ 999,99</p>
+                        <button type="button" class="add-to-cart-button">Buy</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../assets/tenis.png" alt="Tênis Estiloso" width="200" height="200">
+                    <h3>Tênis Estiloso</h3>
+                    <div class="product-details">
+                        <p>R$ 999,99</p>
+                        <button type="button" class="add-to-cart-button">Buy</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="../assets/tenis.png" alt="Tênis Estiloso" width="200" height="200">
+                    <h3>Tênis Estiloso</h3>
+                    <div class="product-details">
+                        <p>R$ 999,99</p>
+                        <button type="button" class="add-to-cart-button">Buy</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>
-
+            <p>&copy; 2023 MyStore. Todos os direitos reservados.</p>
+            <div class="social-media">
+                <a href="#"><img src="../assets/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../assets/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../assets/twitter.png" alt="Twitter"></a>
+            </div>
         </footer>
     </main>
 
 </body>
+
+    
 </html>

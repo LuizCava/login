@@ -1,7 +1,7 @@
 document.getElementById('signForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const username = document.getElementById('username').value;
-    const password = Number(document.getElementById('password').value);
+    const password = document.getElementById('password').value;
 
 
     const data = localStorage.getItem('user');
@@ -11,10 +11,9 @@ document.getElementById('signForm').addEventListener('submit', function(event) {
 
         if (user.length === 0) {
             
-            localStorage.setItem('user', `[{"id":1,"name":"${username}","password":${password}}]`);
+            localStorage.setItem('user', `[{"id":1,"name":"${username}","password":"${password}"}]`);
             
         }else {
-            console.log('User already exists');
             userData.push({ id: userData.length + 1, name: username, password: password });
         }
         window.location.href = 'home.html';
