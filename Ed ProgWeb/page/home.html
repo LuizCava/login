@@ -20,14 +20,17 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#product">Produtos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li>
-                        <button type="button" onclick="signOut()" class="sign-out-button">
-                            <p>Logout</p>
-                        </button>
-                    </li>
+                    <li><a href="#about">Sobre</a></li>
                 </ul>
             </nav>
+            <div>
+                <button type="buttonGoCar" onclick="goCar()" class="sign-out-button">
+                    <img src="../assets/car.png" alt="Carrinho de Compras" width="18" height="18">
+               </button>
+               <button type="buttonSignOut" onclick="signOut()" class="sign-out-button">
+                   <p>Logout</p>
+               </button>
+            </div>
         </header>
         <div class="container">
             <div class="logo">
@@ -91,7 +94,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer id="about">
             <p>&copy; 2023 MyStore. Todos os direitos reservados.</p>
             <div class="social-media">
                 <a href="#"><img src="../assets/facebook.png" alt="Facebook"></a>

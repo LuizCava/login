@@ -52,11 +52,19 @@ header nav ul li a{
 header nav ul li a.active{
     font-weight: bold;
 }
-header nav ul li button{
+header button{
     color: #000;
     text-decoration: none;
     font-size: 16px;    
     border: none;
+    height: 30px;
+    width: 100px;   
+}
+.buttonGoCar{
+    padding: 0 6px ;
+}
+.buttonSignOut{
+    
 }
 .container{
     display: flex;

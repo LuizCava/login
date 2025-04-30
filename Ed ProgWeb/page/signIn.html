@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/logo.png" type="image/png">
     <title>MyStore | Login</title>
     <link rel="stylesheet" href="../css/sign.css">
     <link rel="stylesheet" href="../css/global.css">
@@ -19,6 +20,20 @@
             </form>
         </div>
     </main>
+    <script>
+        function getUser() {
+            const data = localStorage.getItem('user');  
+            const user = JSON.parse(data);
+            return user;
+        }
+        const user = getUser();
+        if(user == null){
+            localStorage.setItem('user', JSON.stringify([]));
+        }
+        if(!user[0]){
+            window.location.href = './signUp.html';
+        }
+    </script>
     <script src="../js/signIn.js"></script>
     
 </body>
