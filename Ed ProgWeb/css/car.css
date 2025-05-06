@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+#box {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+h1 {
+    text-align: center;
+}
+#car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.car-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+   
+}
+.car-item img {
+    max-width: 100%;
+    height: auto;
+}
+.remove-button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #f75959;
+    color: #eee ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#total-price{
+    padding: 40px 0 20px 0;
+}
+.checkout-button{
+    width: 200px;
+    height: 30px;
+    border: none;
+    background-color: #000;
+    color: #eee ;
+    border-radius: 5px;
+}
